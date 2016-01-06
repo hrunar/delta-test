@@ -1,0 +1,19 @@
+PODS:
+  - Delta (1.0.0)
+
+DEPENDENCIES:
+  - Delta (from `https://github.com/thoughtbot/Delta.git`)
+
+EXTERNAL SOURCES:
+  Delta:
+    :git: https://github.com/thoughtbot/Delta.git
+
+CHECKOUT OPTIONS:
+  Delta:
+    :commit: 5c2e5f11bc46158dd6e1dc0e4dba54e7e67d8149
+    :git: https://github.com/thoughtbot/Delta.git
+
+SPEC CHECKSUMS:
+  Delta: 35694e6e06a7e5d9dd8a25f3b0768ed66c0579c5
+
+COCOAPODS: 0.39.0
