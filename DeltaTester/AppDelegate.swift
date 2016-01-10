@@ -25,11 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         tabBarController.viewControllers = [Tab.Markets, Tab.Feed, Tab.User].map { (tab) -> UIViewController in
-            let vc = storyboard.instantiateViewControllerWithIdentifier("firstViewController")
-            let title = tabBarController.titleForTab(tab)
-            vc.title = title
+            let vc = storyboard.instantiateViewControllerWithIdentifier(tabBarController.storyboardIdentifierForTab(tab))
             vc.view.backgroundColor = tabBarController.backgroundColorForTab(tab)
-            if let vc = vc as? FirstViewController {
+            if let vc = vc as? ViewController {
                 vc.store = store
             }
             return vc
